@@ -89,6 +89,19 @@ See the NewRelic documentation for current configuration options:
 https://docs.newrelic.com/docs/infrastructure/new-relic-infrastructure/configuration/configure-infrastructure-agent)
 
 
+##### `nrinfragent_custom_attributes` (OPTIONAL)
+
+Specifies a list of custom attributes to annotate the data from the agent.
+
+For example:
+
+```
+nrinfragent_custom_attributes:
+  environment: production
+  service: login service
+  team: alpha-team
+```
+
 
 ## Limitations
 

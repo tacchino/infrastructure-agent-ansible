@@ -1,1 +1,5 @@
+
 {{ nrinfragent_config | to_nice_yaml }}
+{% if nrinfragent_custom_attributes is defined %}
+{{ {'custom_attributes': nrinfragent_custom_attributes} | to_nice_yaml }}
+{% endif %}
